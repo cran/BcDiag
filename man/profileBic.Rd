@@ -35,13 +35,10 @@ Kaiser S. and Leisch F. (2008). A Toolbox for Bicluster Analysis in R. \emph{Lud
 \examples{
 #manupilate the biclust result
 data(breastc)
-if(!require(biclust)){
-stop("the 'biclust' package is required")
-}
 bic<- biclust(breastc, method=BCPlaid())# 3 bicluster found.
 #3D profile plot for biclusterd and clusterd data.
 profileBic(dset=breastc,bres=bic,mname="biclust",
-bplot="3D",gby="conditions",teta=-30,ph=50,bnum=1)
+bplot="3D",gby="genes",teta=-30,ph=50,bnum=1)
 }
 
 \keyword{profileBic}

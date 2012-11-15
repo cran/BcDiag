@@ -18,10 +18,6 @@ indexedBic<-function(dset,bres,mname=c("fabia","isa2","biclust"),bnum){
 	if(check=="fabia"){
 		#Extract biclusters:
 		#get the biclust index inside the dset 
-		if(!require(fabia)){
-			stop("The `fabia' package is required for this")
-		}
-
 		resf <- extractBic(bres)
 		bg<-resf$numn[1,]$numng
 		bc<-resf$numn[1,]$numnp
@@ -31,20 +27,12 @@ indexedBic<-function(dset,bres,mname=c("fabia","isa2","biclust"),bnum){
 	}
 	if(check=="isa2"){
 		#convert to biclust and get the biclust indecies
-		if(!require(isa2)& !require(biclust)){
-			stop("The `biclust' and 'isa2' packages are required for this")
-		}
-
 		resi<-isa.biclust(bres)
 		indg<-which(resi@RowxNumber[,l])
 		indc<-which(resi@NumberxCol[l,])
 	
 	}
 	if(check=="biclust"){
-		if(!require(biclust)){
-			stop("The `biclust' package is required for this")
-		}
-
 		indg<-which(bres@RowxNumber[,l])
 		indc<-which(bres@NumberxCol[l,])
 	

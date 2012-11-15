@@ -31,18 +31,18 @@ Kaiser S. and Leisch F. (2008). A Toolbox for Bicluster Analysis in R. \emph{Lud
 Csardi G., Kutalik Z., and Bergmann S.(2010). Modular analysis of gene expression data with R. \emph{Bioinformatics,} 26, 1376-7
 }
 
-\author{Mengsteab Aregay \email{mycs.zab@gmail.com}}
+\author{Mengsteab Aregay 
+
+
+\email{mycs.zab@gmail.com}}
 \seealso{\pkg{biclust}}
 
 \examples{
 #manupilate the biclust result
 data(breastc)
-if(!require(fabia)){
-stop("The 'fabia' package is required")
-}
 fab<- fabia(breastc)
 #write the bicluster result in to a text
-writeBic(dset=breastc,fileName="fabiabic.txt",
+writeBic(dset=breastc,fileName="fabiabreast.txt",
 bicResult=fab, bicname="Biclust results for fabia",
 mname="fabia")
 }
