@@ -1,0 +1,2 @@
+exportPattern("^[[:alpha:]]+")
+export("anomedOnlybic","exploreBic","profileBic","exploreOnlybic","writeBic")
