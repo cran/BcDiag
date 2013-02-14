@@ -32,9 +32,9 @@ Summary plot will display only for biclusterd data.
 \code{\link{exploreBic}}}
 \examples{
 data(breastc)
-# find bicluster using fabia algorithm
-fab<- fabia(breastc)
+# find bicluster using biclust algorithm
+bic<- biclust(breastc,method=BCPlaid())
 # Plot the median of biclusterd data.
-exploreOnlybic(dset=breastc,bres=fab,fit="all",gby="genes",mname="fabia",bnum=1)
+exploreOnlybic(dset=breastc,bres=bic,fit="all",gby="genes",mname="biclust",bnum=1)
 }
 \keyword{exploreOnlybic}

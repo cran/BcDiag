@@ -1,4 +1,4 @@
-fc8048aaf9416c3bc5f3dbae1c17b606 *DESCRIPTION
+4a68d6ea00394c1c6de09d1f4984aabf *DESCRIPTION
 aa98a42d27067dfe855463d3f16d6c6d *NAMESPACE
 f8e59742e222fbaf17394e11a67d93e2 *R/anomedOnlybic.R
 01fe2cecac1a54f5f433a3ec9f41a8d9 *R/exploreBic.R
@@ -17,9 +17,9 @@ fb953831d2f046bcbb22d661289d0790 *data/breastc.rda
 c258cf918468f7781bc2418baccb5733 *man/anomedOnlybic.Rd
 e005e69562f7d9d2eac1e605bbb9e5e1 *man/breastc.Rd
 9923f9c4bd89e1db9f8ef3733fa32d37 *man/dlbcl.Rd
-b25f0516f3148f87f3f81d48edbab7cd *man/exploreBic.Rd
+62fe41151ad2e9591a11b3b43a9d60a8 *man/exploreBic.Rd
 fd11df6afe343907ed25079548cedafb *man/exploreCalc.Rd
-f02d769a4cf53c9ca18c226bc8de9732 *man/exploreOnlybic.Rd
+4a83d430dda57945daf8ef39b1485eec *man/exploreOnlybic.Rd
 39c8bb2fb9c82f37e3576cdf640ccc8d *man/explorePlot.Rd
 b6e459aa913154f16463c0b2eca2ad46 *man/indexedBic.Rd
 a20e304a05d3e7ae036a2c068146ccd1 *man/plotOnlybic.Rd
