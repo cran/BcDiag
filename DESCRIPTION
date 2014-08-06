@@ -1,12 +1,12 @@
 Package: BcDiag
-Version: 1.0.2
-Date: 2013-02-14
+Version: 1.0.4
+Date: 2014-08-06
 Title: Diagnostics plots for Bicluster Data
 License: GPL (>= 2)
-Depends: R (>= 2.10), biclust, fabia
-Suggests: isa2
-Author: Aregay Mengsteab, Martin Otava, Tatsiana Khamiakova
-Maintainer: Aregay Mengsteab <mycs.zab@gmail.com>
+Depends: R (>= 2.10)
+Suggests: biclust, fabia, isa2
+Author: Aregay Mengsteab, Martin Otava, Tatsiana Khamiakova, Ewoud De Troyer
+Maintainer: Ewoud De Troyer <ewoud.detroyer@student.uhasselt.be>
 Description: This package provides Diagnostic tools based on two way
         anova and median polish residual plots for Bicluster output
         obtained from packages; "biclust" by Kaiser et al.(2008),"isa2"
@@ -17,7 +17,7 @@ Description: This package provides Diagnostic tools based on two way
         which is, extracting bicluster output in a text format, by
         adding by adding two bicluster methods from fabia and isa2 r
         packages.
-Packaged: 2013-03-12 14:40:37 UTC; Fikir
+Packaged: 2014-08-06 13:59:12 UTC; Ewoud
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-03-12 17:19:23
+Date/Publication: 2014-08-08 01:00:00

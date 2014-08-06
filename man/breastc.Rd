@@ -10,7 +10,7 @@
 
 
 \description{
-Microarray data set of van't Veer breast cancer
+Microarray data set of van't Veer breast cancer.
 }
 
 
@@ -19,7 +19,7 @@ Microarray data set of van't Veer breast cancer
 
 
 \format{
-  A data matrix with 1213 genes and 97 samples.
+A data matrix with 1213 genes and 97 samples.
 }
 
 \references{

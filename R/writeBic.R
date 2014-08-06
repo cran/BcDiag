@@ -28,12 +28,15 @@ writeBic<-function (dset,fileName, bicResult, bicname, mname = c("fabia","isa2",
 		for (i in 1:resb$np) {
 			listar = matrix(resb$bic[i,]$bixn)
 			listac = matrix(resb$bic[i,]$biypn)
-			write(c(length(listar), length(listac)), file = fileName, 
-				ncolumns = 2, append = TRUE, sep = delimiter)
-			write(listar, file = fileName, ncolumns = length(listar), 
-				append = TRUE, sep = delimiter)
-			write(listac, file = fileName, ncolumns = length(listac), 
-				append = TRUE, sep = delimiter)
+			if(dim(listar)[1]>0 & dim(listac)[1]>0){
+				write(c(length(listar), length(listac)), file = fileName, 
+						ncolumns = 2, append = TRUE, sep = delimiter)
+				write(listar, file = fileName, ncolumns = length(listar), 
+						append = TRUE, sep = delimiter)
+				write(listac, file = fileName, ncolumns = length(listac), 
+						append = TRUE, sep = delimiter)
+				write("\n", file = fileName, append = TRUE)
+			}			
 		}
 	}
 	if(check=="isa2"){

@@ -1,23 +1,22 @@
 \name{exploreOnlybic}
 \alias{exploreOnlybic}
-\title{ The exploreOnlybic function
-}
-\description{Provides exploratory plots only for biclusterd.}
+\title{The exploreOnlybic function}
+
+\description{Provides exploratory plots only for biclustering results.}
 \usage{
-exploreOnlybic(dset, bres, fit= "all", gby= "genes", mname="biclust",bnum=1)
+exploreOnlybic(dset, bres, pfor= "all", gby= "genes", mname="biclust",bnum=1)
 }
 \arguments{
-  \item{dset}{Data matrix.}
-  \item{bres}{Bicluster result.}
+  \item{dset}{data matrix.}
+  \item{bres}{biclustering result.}
   \item{gby}{group bicluster; 'genes' or 'conditions'.}
-  \item{fit}{ fit a plot for 'mean', 'median', 'variance', 'mad', 'all', or 'quantile'.}
-  \item{mname}{Method name; 'biclust', 'isa2' or 'fabia'}
-  \item{bnum}{Existed biclusters; '1','2'...}
+  \item{pfor}{fit a plot for 'mean', 'median', 'variance', 'mad', 'all', or 'quant' (quantile).}
+  \item{mname}{method name; 'biclust', 'isa2' or 'fabia'.}
+  \item{bnum}{existing biclusters; '1','2'...}
 }
-\details{The exploreOnlybic function has similar function with \code{\link{exploreBic}}. the only difference is, it provides exploratory plots only for biclusterd data. It provides summary plots for  'mean' 'median', 'variance', 'mad' and 'quantile plot'.
-}
+\details{The exploreOnlybic function has similar function with \code{\link{exploreBic}}. The only difference is that it provides exploratory plots only for biclustered data.}
 \value{
-Summary plot will display only for biclusterd data.
+Summary plot will display only for biclustered data.
 }
 
 \author{Mengsteab Aregay \email{mycs.zab@gmail.com}}
@@ -33,8 +32,9 @@ Summary plot will display only for biclusterd data.
 \examples{
 data(breastc)
 # find bicluster using biclust algorithm
-bic<- biclust(breastc,method=BCPlaid())
+library(biclust)
+bic <- biclust(breastc,method=BCPlaid())
 # Plot the median of biclusterd data.
-exploreOnlybic(dset=breastc,bres=bic,fit="all",gby="genes",mname="biclust",bnum=1)
+exploreOnlybic(dset=breastc, bres=bic, pfor="all", gby="genes", mname="biclust", bnum=1)
 }
 \keyword{exploreOnlybic}

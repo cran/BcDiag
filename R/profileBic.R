@@ -13,6 +13,9 @@
 #-------------------------------------#
 profileBic <- function(dset,bres,mname=c("fabia","isa2","biclust"),bplot="all",gby="genes",bnum=1,teta=120,ph=30){
 	
+	# Small extra for the GUI
+	if(bplot=="threeD"){bplot <- "3D"}	
+
 	#check if the bic number to plotted is specified and
 	if(any(!bplot %in% c("all","boxplot","lines","3D","histogram"))) {
 		stop("`bplot' must be one of `boxplot', `lines', `3D','histogram' or `all'")

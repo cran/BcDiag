@@ -10,18 +10,18 @@ mname = c("fabia", "isa2", "biclust"), append = TRUE, delimiter = " ")
 }
 
 \arguments{
-  \item{dset}{Data matrix }
-  \item{fileName}{ The name of the bicluster file to be saved.}
+  \item{dset}{data matrix}
+  \item{fileName}{the name of the bicluster file to be saved.}
   \item{bicResult}{bicluster result obtained from 'biclust','isa2' or 'fabia'}
-  \item{bicname}{ the tilte to be given for the biclusterd data.}
-  \item{mname}{ method name; 'biclust', 'isa2' or 'fabia'}
-  \item{append}{logical value; 'true' or 'false}
-  \item{delimiter}{ default value is " ".}
+  \item{bicname}{the title to be given for the biclustered data.}
+  \item{mname}{method name; 'biclust', 'isa2' or 'fabia'}
+  \item{append}{logical value; TRUE as default}
+  \item{delimiter}{delimiter in created output file; default value is " ".}
 }
 
-\details{ The original function was developed in 'biclust' package by Kaiser \emph{et.al} (2008). we extend the function to be used for further bicluster algorithms, such as; 'isa2' and 'fabia'.}
+\details{The original function was developed in 'biclust' package by Kaiser \emph{et.al} (2008). We extend the function to be used for further bicluster algorithms, such as; 'isa2' and 'fabia'.}
 
-\value{ Biclusterd text file with title, total number of biclusterd, dimention and name of the biclusterd genes(rows) or conditions(columns).}
+\value{Biclustered text file with title, total number of biclustered, dimension and name of the biclustered genes(rows) or conditions(columns).}
 
 \references{
 Van't Veer, L.J., Dai, H., van de Vijver, M.J., He, Y.D., Hart, A.A. et al. (2002). Gene expression profiling predicts clinical outcome of breast cancer,\emph{Nature}, 415, 530-536.
@@ -38,10 +38,11 @@ Csardi G., Kutalik Z., and Bergmann S.(2010). Modular analysis of gene expressio
 \seealso{\pkg{biclust}}
 
 \examples{
-#manupilate the biclust result
+# create the biclustering result
 data(breastc)
+library(fabia)
 fab<- fabia(breastc)
-#write the bicluster result in to a text
+# write the biclustering result into a text file
 writeBic(dset=breastc,fileName="fabiabreast.txt",
 bicResult=fab, bicname="Biclust results for fabia",
 mname="fabia")

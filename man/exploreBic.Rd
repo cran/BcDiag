@@ -1,22 +1,22 @@
 \name{exploreBic}
 \alias{exploreBic}
-\title{ The exploreBic function
-}
-\description{Provides exploratory plots for biclusterd and. clusterd data parallely.}
+\title{The exploreBic function}
+
+\description{Provides exploratory plots for biclustered and clustered data.}
 \usage{
 exploreBic(dset, bres, gby ="genes", pfor ="mean", mname ="biclust", bnum =1)
 }
 \arguments{
-  \item{dset}{Data matrix.}
-  \item{bres}{Bicluster result.}
-  \item{gby}{group bicluster; 'genes' or 'conditions'.}
-  \item{pfor}{plot for 'mean', 'median', 'variance', 'mad', 'all', or 'quantile'.}
-  \item{mname}{Method name; 'biclust', 'isa2' or 'fabia'}
-  \item{bnum}{Existed biclusters; '1','2'...}
+  \item{dset}{data matrix.}
+  \item{bres}{bicluster result.}
+  \item{gby}{dimension to plot; 'genes' or 'conditions'.}
+  \item{pfor}{plot for 'mean', 'median', 'variance', 'mad', 'all', or 'quant' (quantile).}
+  \item{mname}{method name; 'biclust', 'isa2' or 'fabia'}
+  \item{bnum}{existing biclusters; '1','2'...}
 }
-\details{The exploreBic function is mainly used for exploratory data analysis. It provides summary plots for  'mean' 'median', 'variance', 'mad' and 'quantile plot'.
+\details{The exploreBic function is mainly used for exploratory data analysis. It provides summary plots for mean, median, variance, MAD and quantile plot.
 
-The \code{\link{exploreBic}}function checked if the parameters are appropriately submitted and then it calls the \code{\link{indexedBic}}function to identify the biclust sub matrix and forwarded it to \code{\link{exploreCalc}} to be calculated its summary statistics. Finally, \code{\link{explorePlot}} will be invoked to display the required plot.
+The \code{\link{exploreBic}} function checks if the parameters are appropriately submitted and then identifies the biclusters submatrix and calculates its summary statistics. Finally, the results are displayed on the required plot.
 }
 \value{
 Summary plot will display according to the user specification.
@@ -34,7 +34,8 @@ Summary plot will display according to the user specification.
 \examples{
 data(breastc)
 # find bicluster using biclust package
-bic<- biclust(breastc,method=BCPlaid())
+library(biclust)
+bic <- biclust(breastc,method=BCPlaid())
 # Plot the mean of biclusterd and clustered genes parallely.
 exploreBic(dset=breastc,bres=bic,gby="conditions",pfor="mean",mname="biclust")
 }

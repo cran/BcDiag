@@ -9,7 +9,7 @@
 
 
 \description{
-Log transformed Microarray data set of Rosenwald diffuse large-B-cell lymphoma
+Log transformed Microarray data set of Rosenwald diffuse large-B-cell lymphoma.
 }
 
 
@@ -18,7 +18,7 @@ Log transformed Microarray data set of Rosenwald diffuse large-B-cell lymphoma
 
 
 \format{
-  A data matrix with 661 genes and 141 samples.
+A data matrix with 661 genes and 141 samples.
 }
 
 \references{
