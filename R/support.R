@@ -1,3 +1,20 @@
+
+
+#--------------------------
+#' A function to transform the isa2 results to biclust results
+#--------------------------
+
+isa2biclust <- function(x){
+	Parameters <- list(seeddata=x$seeddata,rundata=x$rundata)
+	RowxNumber <- (x$rows != 0)
+	NumberxCol <- t(x$columns != 0)
+	Number <- ncol(x$rows)
+
+	out <- new("Biclust", Parameters=Parameters, RowxNumber=RowxNumber, NumberxCol=NumberxCol, Number=Number)
+	return(out)
+}
+
+
 #----------------------
 
 #' a function supports for explore bic function
@@ -124,15 +141,15 @@ indexedBic<-function(dset,bres,mname=c("fabia","isa2","biclust"),bnum){
 		#Extract biclusters:
 		#get the biclust index inside the dset 
 		resf <- extractBic(bres)
-		bg<-resf$numn[1,]$numng
-		bc<-resf$numn[1,]$numnp
+		bg<-resf$numn[l,]$numng
+		bc<-resf$numn[l,]$numnp
 		# the two indecies	
 		indg<-bg
 		indc<-bc
 	}
 	if(check=="isa2"){
 		#convert to biclust and get the biclust indecies
-		resi<-isa.biclust(bres)
+		resi<-isa2biclust(bres)
 		indg<-which(resi@RowxNumber[,l])
 		indc<-which(resi@NumberxCol[l,])
 		
@@ -142,6 +159,10 @@ indexedBic<-function(dset,bres,mname=c("fabia","isa2","biclust"),bnum){
 		indc<-which(bres@NumberxCol[l,])
 		
 	}
+	
+	# Warning for bicluster with 1 row and 1 column
+	if(length(indg)==1 & length(indc)==1){stop("Bicluster only has 1 row and 1 column",call.=FALSE)}
+
 	return(list(indg,indc))
 }
 
