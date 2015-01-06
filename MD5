@@ -1,10 +1,10 @@
-a375af863b0c0ed64d3201d697b8cd46 *DESCRIPTION
+e78ffa41fdaf008ccfb3643d2e1eb2f8 *DESCRIPTION
 59e059e0ea0142dd76d192620090ddb4 *NAMESPACE
-a06d0ce3cbfa36a4bc76d831e06723e9 *R/anomedOnlybic.R
+42e9b75c9955b1ad0db85c9c4dffd145 *R/anomedOnlybic.R
 f5c9416a16364bdbff804aed34439a00 *R/exploreBic.R
 0c0669cfe26f1e3a7e0e4abe1f0cc65b *R/exploreOnlybic.R
-6bbd1e0afd9cd6b9ddf9699a865ade5b *R/profileBic.R
-d35bcd4171948313248c1abec116e00f *R/support.R
+5b34aab6e7bd5c48f078bd7c64039444 *R/profileBic.R
+a245a2679369f418e7fadc6e9cec7733 *R/support.R
 9b8952f59d449c890f2b85b51477c79a *R/writeBic.R
 fb953831d2f046bcbb22d661289d0790 *data/breastc.rda
 52fdbb648058caa9d6fd3351c92cb3ed *data/dlbcl.rda
