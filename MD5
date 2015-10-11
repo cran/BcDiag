@@ -1,9 +1,9 @@
-e78ffa41fdaf008ccfb3643d2e1eb2f8 *DESCRIPTION
-59e059e0ea0142dd76d192620090ddb4 *NAMESPACE
+344349924cabbe53bde07461db598c00 *DESCRIPTION
+044a24fbc27ed91273f3ceb69fc29ed2 *NAMESPACE
 42e9b75c9955b1ad0db85c9c4dffd145 *R/anomedOnlybic.R
 f5c9416a16364bdbff804aed34439a00 *R/exploreBic.R
 0c0669cfe26f1e3a7e0e4abe1f0cc65b *R/exploreOnlybic.R
-5b34aab6e7bd5c48f078bd7c64039444 *R/profileBic.R
+f047bc642ed24f8b112eb814ff072bc0 *R/profileBic.R
 a245a2679369f418e7fadc6e9cec7733 *R/support.R
 9b8952f59d449c890f2b85b51477c79a *R/writeBic.R
 fb953831d2f046bcbb22d661289d0790 *data/breastc.rda
@@ -14,5 +14,5 @@ fb953831d2f046bcbb22d661289d0790 *data/breastc.rda
 880a7177de939c517f8998cec714903d *man/dlbcl.Rd
 9873ab4577ca69224fde9249f2df4d30 *man/exploreBic.Rd
 08745a4122ffd6402c85fb64d31bad6e *man/exploreOnlybic.Rd
-638655cc4d4e628c66557547d9c11da8 *man/profileBic.Rd
+5676a14403d82eb150a31b9bad5aef47 *man/profileBic.Rd
 2511365857160963010f289745764d2c *man/writeBic.Rd
